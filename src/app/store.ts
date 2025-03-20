@@ -5,6 +5,7 @@ import boxReducer from "../app/features/boxSlice";
 import counterReducer from "../app/features/counterSlice";
 import jokeReducer from "../app/features/jokeSlice";
 import todoReducer from "../app/features/todoSlice";
+import waterSliceReducer from "../app/features/waterSlice";
 
 export const store = configureStore({
   reducer: {
@@ -14,6 +15,8 @@ export const store = configureStore({
     counter: counterReducer,
     joke: jokeReducer,
     todo: todoReducer,
+    water: waterSliceReducer,
+
   },
 });
 
