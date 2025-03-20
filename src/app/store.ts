@@ -4,6 +4,7 @@ import cardReducer from "../app/features/cardSlice";
 import boxReducer from "../app/features/boxSlice";
 import counterReducer from "../app/features/counterSlice";
 import jokeReducer from "../app/features/jokeSlice";
+import todoReducer from "../app/features/todoSlice";
 
 export const store = configureStore({
   reducer: {
@@ -12,6 +13,7 @@ export const store = configureStore({
     box: boxReducer,
     counter: counterReducer,
     joke: jokeReducer,
+    todo: todoReducer,
   },
 });
 

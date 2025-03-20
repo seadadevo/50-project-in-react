@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f4f4f4;
+}
+
+.calendar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 50px;
+
+}
+
+.day-column {
+  width: 150px;
+  padding: 10px;
+  border: 2px solid #6a94cc;
+  min-height: 200px;
+  background: white;
+  border-radius: 10px;
+}
+
+.todo {
+  padding: 8px;
+  margin: 5px 0;
+  background: lightblue;
+  border-radius: 4px;
+  cursor: grab;
+}
