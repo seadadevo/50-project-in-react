@@ -1,4 +1,3 @@
-// Card.js
 import { useEffect } from "react";
 import {  useSelector } from "react-redux";
 import { setData, RootState } from "../../../app/features/cardSlice";

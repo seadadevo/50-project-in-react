@@ -1,11 +1,11 @@
-import Project2 from "./projects/contentPlaceholder/Project2";
+import Project3 from "./projects/3d-boxes-background/Project3";
 
 
 
 const App = () => {
   return (
     <div>
-      <Project2/>
+      <Project3/>
     </div>
   );
 };

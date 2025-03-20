@@ -1,4 +1,3 @@
-// cardSlice.js
 import { createSlice } from "@reduxjs/toolkit";
 
 interface CardState {
@@ -14,7 +13,7 @@ export interface RootState  {
   card: CardState;
 }
 
-const initialState = {
+const initialState: CardState = {
   headerImg: "",
   title: "",
   excerpt: "",
