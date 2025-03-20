@@ -26,6 +26,3 @@ export const { toggleCup } = waterSlice.actions;
 export default waterSlice.reducer;
 
 
-   
-export type RootState = ReturnType<typeof store.getState>;
-export type AppDispatch = typeof store.dispatch;
