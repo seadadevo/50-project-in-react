@@ -5,7 +5,7 @@ import DayColumn from "./components/DayColumn";
 import { useSelector } from "react-redux";
 import { RootState } from "../../app/store";
 
-const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
+const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 const Project6 = () => {
   const todos = useSelector((state :RootState) => state.todo.todos);
   return (

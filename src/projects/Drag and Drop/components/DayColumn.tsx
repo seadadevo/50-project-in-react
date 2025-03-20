@@ -2,13 +2,13 @@ import { useDrop } from "react-dnd";
 import { useDispatch } from "react-redux";
 import { moveTodo } from "../../../app/features/todoSlice";
 import TodoItem from "./TodoItem";
-import "../dragstyle.css"
+import "../dragstyle.css";
 interface DayColumnProps {
   day: string;
-  todos: { id: string; [key: string]: any }[];
+  todos: { id: string; newDay: string }[];
 }
 
-const DayColumn: React.FC<DayColumnProps> = ({ day, todos }) => {
+const DayColumn = ({ day, todos }: DayColumnProps) => {
   const dispatch = useDispatch();
 
   const [{ isOver }, drop] = useDrop(() => ({
@@ -20,7 +20,11 @@ const DayColumn: React.FC<DayColumnProps> = ({ day, todos }) => {
   }));
 
   return (
-    <div ref={drop} className="day-column" style={{ background: isOver ? "#ddd" : "white" }}>
+    <div
+      ref={drop}
+      className="day-column"
+      style={{ background: isOver ? "#ddd" : "#fff" }}
+    >
       <h3>{day}</h3>
       {todos.map((todo) => (
         <TodoItem key={todo.id} todo={todo} />
