@@ -10,16 +10,16 @@ const Threedboxes = () => {
   const isBig = useSelector((state: RootState) => state.box.big);
   // const [isBig, setIsBig] = useState(true)
   return (
-    <div className="container">
+    <div className="container space-y-3" >
       <button
-        className="magic cursor-pointer"
+        className="magic cursor-pointer "
         onClick={() => dispatch(toggleSize())}
       >
         Magic 🎩
       </button>
 
       <div className={`boxes ${isBig ? 'big' : ''}`}>
-      {Array.from({ length: 1 }).map((_, i) =>
+      {Array.from({ length: 4 }).map((_, i) =>
           Array.from({ length: 4 }).map((_, j) => (
             <div
               key={`${i}-${j}`}

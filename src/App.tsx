@@ -1,11 +1,11 @@
-import Project3 from "./projects/3d-boxes-background/Project3";
+import Project4 from "./projects/CounterIncrement/Project4";
 
 
 
 const App = () => {
   return (
     <div>
-      <Project3/>
+      <Project4/>
     </div>
   );
 };
