@@ -26,7 +26,6 @@ body {
   border-radius: 10px;
   max-width: 100%;
   width: 600px;
-  /* height: 120px; */
   overflow: hidden;
   transition: all 0.3s;
   margin-bottom: 20px;
@@ -71,12 +70,4 @@ body {
 
 .icons i.hid {
   display: none;
-}
-
-.icons.toggle i:first-of-type {
-  /* display: none; */
-}
-
-.icons.toggle i:last-of-type {
-  /* display: block; */
 }
