@@ -9,3 +9,12 @@ export interface IMovie {
  export  interface ApiResponse {
     results: IMovie[];
   }
+  
+  
+  export  interface IProjectData {
+    id: number;
+    day: string;
+    img: string;
+    name: string;
+    project: string;
+   }

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "../moviestyle.css";
+import { Link } from "react-router-dom";
 
 interface IProps {
   onSearch: (query: string) => void;
@@ -23,7 +24,7 @@ const Header = ({ onSearch }: IProps) => {
           <span className="text-[#FFD700] font-bold text-[30px]">M</span>ovies
         </a>
       </div>
-
+        <Link to="/">Ahmed</Link>
       <input
         className="rounded-[50px] bg-transparent border 
            border-[#22254b] border-2 outline-none 

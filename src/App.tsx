@@ -1,16 +1,11 @@
-
-import Project7 from "./projects/dring water/Project7";
-import Project8 from "./projects/EventKeyCodes/Project8";
-import Project9 from "./projects/FAQ/Project9";
-import Project10 from "./projects/Movies Website/Project10";
-
-
-
+import { RouterProvider } from "react-router-dom";
+import router from "../src/router";
+import "./App.css";
 const App = () => {
   return (
-    <div>
-      <Project10/>
-    </div>
+    <>
+      <RouterProvider router={router} />
+    </>
   );
 };
 
